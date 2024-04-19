@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #062224;
+  height: 100%;
+  min-width: 320px !important;
+  /* overflow: hidden; */
+}
+
+
+._section {
+  @apply w-full
+}
+._wrapper {
+  @apply px-5 max-w-[1200px] mx-auto
+}
+._text_to_30px{
+  @apply text-[16px] xs:text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[30px]
+}
+
+
+@media (max-width: 767px) {
+  ._header_inner_shadow{
+    box-shadow: inset 0px 0px 50px 50px rgba(0,0,0,0.5);
+  }
+}
