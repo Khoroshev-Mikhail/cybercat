@@ -21,25 +21,31 @@ export default function Header(){
                 <div className="_wrapper _header_inner_shadow">
                     <div className="flex flex-row w-full justify-between md:justify-end py-4 md:py-8 xl:py-10">
                         <Social className="md:hidden"/>
-                        <Image className="block" src={burger} alt="menu" />
+                        <Image className="w-[39px] xs:w-auto block" src={burger} alt="menu" />
                     </div>
                     <div className="flex flex-col md:flex-row w-full">
                         <div className="w-full md:w-[55%] flex flex-col pl-[4%]">
                             <Social className="hidden md:flex md:pt-[5%] lg:pt-[10%] xl:pt-[14%]"/>
-                            <Image className="block w-auto md:-ml-[10%]" src={cybercat_ai} alt="CYBERCAT AI" />
+                            <Image className="mt-[4%] block w-auto md:-ml-[10%]" src={cybercat_ai} alt="CYBERCAT AI" />
                             {/* Уменьшить толщину шрифта */}
-                            <div className={`${COOLVETICA} w-3/4 md:w-2/3 leading-none mx-auto md:mx-0  text-white text-center md:text-left text-[16px] xs:text-[22px] sm:text-[20px] md:text-[22px] lg:text-[24px]`}>Cybercat is a rapidly growing community striving to become <span className="text-_purple">one of the most popular in the crypto world</span></div>
-                            <div className="flex justify-center md:justify-start pt-3 xs:pt-4 sm:pt-5 md:pt-7 lg:pt-10 xl:pt-16">
-                                <div className="-skew-y-6">
-                                    <a className="md:py-7.5 md:px-[70px]  block  skew-y-6 bg-_turquoise" href="#">PRESALE</a>
+                            <div className={`${COOLVETICA} mt-[4%] w-3/4 md:w-2/3 leading-none mx-auto md:mx-0  text-white text-center md:text-left text-[16px] xs:text-[22px] sm:text-[20px] md:text-[22px] lg:text-[24px]`}>Cybercat is a rapidly growing community striving to become <span className="text-_purple">one of the most popular in the crypto world</span></div>
+                            <div className="mt-[3%] md:mt-[6%] flex justify-center gap-x-2 md:justify-start pt-3 xs:pt-4 sm:pt-5 md:pt-7 lg:pt-10 xl:pt-16">
+                                <div className="relative">
+                                    <div className="absolute z-10 top-0 left-0 w-full h-full -skew-x-12 bg-_turquoise before:block before:h-full before:border-black before:border-2 "></div>
+                                    <div className="absolute z-20 top-0 left-0 w-full h-full -skew-x-12  before:block before:-mr-[2px] before:-mt-[2px] before:h-full before:border-white before:border-t-2 before:border-r-2"></div>
+                                    <a className="px-4 py-2 relative z-40 md:py-7.5 md:px-[70px] block " href="#"> PRESALE </a>
+                                </div>
+                                <div className="relative">
+                                    <div className="absolute z-10 top-0 left-0 w-full h-full -skew-x-12 bg-_purple before:block before:h-full before:border-black before:border-2"></div>
+                                    <div className="absolute z-20 top-0 left-0 w-full h-full -skew-x-12  before:block before:-mr-[2px] before:-mt-[2px] before:h-full before:border-_turquoise before:border-t-2 before:border-r-2"></div>
+                                    <a className="px-4 py-2 relative z-40 md:py-7.5 md:px-[70px] block" href="#">WHITEPAPER</a>
                                 </div>
                                 
-                                <a className="md:py-7.5 md:px-[70px]  bg-_purple" href="#">WHITEPAPER</a>
                             </div>
                         </div>
                         <div className="relative w-full md:w-[45%]">
                             <div className="absolute w-[150%] h-[150%] left-[-20%] md:left-[-30%] top-[-25%] md:top-[-25%] bg-center bg-contain bg-no-repeat bg-[url('/img/01Header/eclipse.png')]"></div>
-                            <Image className="block md:-mt-[10%] pl-[15%] md:pl-0 relative z-40" src={cat} alt="menu" />
+                            <Image className="block md:-mt-[10%] pl-[15%] md:pl-0 relative z-40" src={cat} alt="Cybercat" />
                         </div>
                         
                     </div>
